@@ -161,21 +161,23 @@ skillBars.forEach((bar) => skillObserver.observe(bar));
      - EmailJS     (https://www.emailjs.com)
 
    Each of these gives you a small snippet or a "form action" URL
-   to paste in — they handle the actual email delivery for you.
+   to paste in — they handle the actual email delivery for you. (previous)
 ---------------------------------------------------------------- */
+/* -------------------------------------------------------------
+   NETLIFY FORMS
+------------------------------------------------------------- */
+
 const contactForm = document.getElementById('contact-form');
 const formNote = document.getElementById('form-note');
 
-contactForm.addEventListener('submit', (event) => {
-  event.preventDefault(); // stop the page from reloading
+if (contactForm) {
+  contactForm.addEventListener('submit', () => {
+    const name = contactForm.name.value.trim();
 
-  // Grab the values just so we could use them if wiring up a real service
-  const name = contactForm.name.value.trim();
-
-  formNote.textContent = `Thanks${name ? ', ' + name : ''}! This is a demo form — connect it to a service like Formspree to actually receive messages.`;
-
-  contactForm.reset();
-});
+    formNote.textContent =
+      `Thank you${name ? ', ' + name : ''}! Your message has been sent successfully.`;
+  });
+}
 
 
 /* -------------------------------------------------------------
