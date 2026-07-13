@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md Nafis Hasan | Textile Engineering Student</title>
+  <meta name="description" content="Personal portfolio of Md Nafis Hasan, BSc Textile Engineering student at Southeast University, Bangladesh." />
+
+  <!-- Google Fonts: Lora (headings/serif) + Inter (body/sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon placeholder: replace /assets/favicon.png with your own icon -->
+  <!-- <link rel="icon" href="assets/favicon.png" type="image/png"> -->
+</head>
+<body>
+
+  <!-- =================================================================
+       WOVEN THREAD BACKGROUND (decorative, fixed, behind everything)
+       This is the site's signature visual motif: faint warp/weft lines
+       evoking woven fabric. Purely decorative -- hidden from screen
+       readers via aria-hidden.
+  ================================================================= -->
+  <div class="thread-field" aria-hidden="true"></div>
+
+  <!-- =================================================================
+       TOP NAVIGATION
+  ================================================================= -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar container">
+      <a href="#hero" class="logo">MNH<span class="logo-dot">.</span></a>
+
+      <!-- Desktop nav links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+		<li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <!-- Dark / light mode toggle button -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark and light mode">
+          <!-- Sun icon (shown in dark mode, click to go light) -->
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/>
+          </svg>
+          <!-- Moon icon (shown in light mode, click to go dark) -->
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.6A9 9 0 1 1 11.4 3a7 7 0 0 0 9.6 9.6Z"/>
+          </svg>
+        </button>
+
+        <!-- Hamburger button for mobile menu -->
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- =================================================================
+         HERO SECTION
+    ================================================================= -->
+    <section id="hero" class="hero container">
+      <div class="hero-text" data-animate="fade-up">
+        <p class="eyebrow">Textile Enthusiast | Research Aspirant | Lifelong Learner</p>
+
+        <h1 class="hero-title">
+          Md Nafis Hasan
+        </h1>
+
+        <p class="hero-tagline">
+          Textile Engineering student at Southeast University, Bangladesh,
+		  Passionate about textile manufacturing, sustainable materials, and research. 
+		  Constantly learning new technologies and exploring innovative solutions to
+		  contribute to the future of the global textile industry.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <!-- Replace assets/Nafis_Hasan_CV.pdf with your actual CV file -->
+          <a href="D:\mdnaf\New folder\files\nafis cv updated.pdf" class="btn btn-outline" download>
+            Download CV
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <!-- Replace href values below with your real profile links -->
+          <a href="https://www.linkedin.com/in/md-nafis-hasan" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.13 1.45-2.13 2.94v5.66H9.37V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+          <a href="mailto:mdnafis.hasan.33@gmail.com" aria-label="Send an email">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          </a>
+          <a href="tel:+8801791897225" aria-label="Call phone number">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.97.36 1.93.68 2.85a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.92.32 1.88.55 2.85.68A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-portrait" data-animate="fade-in">
+        <div class="portrait-frame">
+          <!-- Replace assets/profile-photo.jpg with your actual photo -->
+          <img src="D:\mdnaf\New folder\files\profile pictures.jpg" alt="Portrait of Md Nafis Hasan" class="portrait-img" />
+        </div>
+        <!-- Decorative woven corner stitches around the portrait -->
+        <svg class="portrait-stitch" viewBox="0 0 220 220" aria-hidden="true">
+          <rect x="5" y="5" width="210" height="210" rx="6" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6 7"/>
+        </svg>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span>Scroll</span>
+        <span class="scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- Section divider styled like a stitched seam -->
+    <div class="seam-divider" aria-hidden="true"></div>
+
+    <!-- =================================================================
+         ABOUT ME SECTION
+    ================================================================= -->
+    <section id="about" class="section container">
+      <div class="section-heading" data-animate="fade-up">
+        <p class="section-eyebrow">01 &mdash; Profile</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy" data-animate="fade-up">
+          <!-- EDIT: Replace this paragraph with your own bio -->
+          <p>
+            I'm Md Nafis Hasan, a Textile Engineering student at Southeast University, Bangladesh.
+			I am passionate about textile manufacturing, sustainable materials, 
+			and the technologies shaping the future of the textile industry.
+		  </p>
+          
+		  <p>
+			My academic journey has sparked a strong interest in fiber science, textile processing, and research.
+			I enjoy learning new concepts, exploring innovative solutions, and developing both technical 
+			and analytical skills that can contribute to the advancement of modern textiles.
+          </p>
+		  
+          <p>
+            Beyond academics, I actively work on improving my leadership, communication, and data analysis skills. 
+			I believe continuous learning, curiosity, and dedication are the keys to personal and professional growth.
+		  </p>
+		  <p>
+			As an aspiring textile engineer and researcher, I aim to contribute to sustainable 
+			and innovative developments in the global textile industry.
+          </p>
+
+          <ul class="about-facts">
+            <li><strong>Location:</strong> Dhaka, Bangladesh</li>
+            <li><strong>Field:</strong> Textile Engineering</li>
+            <li><strong>University:</strong> Southeast University</li>
+            <li><strong>Interests:</strong> Textile Manufacturing, Research, Sustainable Materials</li>
+          </ul>
+        </div>
+
+        <div class="about-highlights" data-animate="fade-up">
+          <div class="highlight-card">
+            <span class="highlight-number">95</span>
+            <span class="highlight-label">TOEFL iBT Score</span>
+          </div>
+		  
+          <div class="highlight-card">
+            <span class="highlight-number">2</span>
+            <span class="highlight-label">Semesters Completed</span>
+          </div>
+		  <div class="highlight-card">
+            <span class="highlight-number">5+</span>
+            <span class="highlight-label">Projects &amp; Labs</span>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-number">8+</span>
+            <span class="highlight-label">professional Certifications</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="seam-divider" aria-hidden="true"></div>
+
+    <!-- =================================================================
+         EDUCATION SECTION (Timeline)
+    ================================================================= -->
+    <section id="education" class="section container">
+      <div class="section-heading" data-animate="fade-up">
+        <p class="section-eyebrow">02 &mdash; Academic Path</p>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <!-- Timeline list. Add/remove <li> blocks to add more entries. -->
+      <ol class="timeline">
+        <li class="timeline-item" data-animate="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">2025 &ndash; Present</p>
+            <h3 class="timeline-title">BSc in Textile Engineering</h3>
+            <p class="timeline-org">Southeast University, Bangladesh</p>
+			<p class="timeline-gpa"><strong>CGPA:</strong> Ongoing / 4.00</p>
+            <p class="timeline-desc">
+              Pursuing a Bachelor of Science in Textile Engineering with a focus on textile manufacturing,
+			  fiber science, textile chemistry, and sustainable materials. Actively developing technical 
+			  knowledge, research skills, and industry-oriented expertise through academic coursework, 
+			  laboratory work, and departmental activities.
+            </p>
+          </div>
+        </li>
+
+        <li class="timeline-item" data-animate="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">2023 &ndash; 2024</p>
+            <h3 class="timeline-title">Higher Secondary Certificate (HSC)</h3>
+            <p class="timeline-org">Siddique Memorial School and College, Rangpur, Bangladesh</p>
+			<p class="timeline-gpa"><strong>GPA:</strong> 5.00 / 5.00</p>
+            <p class="timeline-desc">
+              Completed HSC in the Science group, building a foundation in
+              physics, chemistry, and mathematics ahead of engineering studies.
+            </p>
+          </div>
+        </li>
+
+        <li class="timeline-item" data-animate="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">2020 &ndash; 2022</p>
+            <h3 class="timeline-title">Secondary School Certificate (SSC)</h3>
+            <p class="timeline-org">Kaikuri High School,Rangour, Bangladesh</p>
+            <p class="timeline-gpa"><strong>GPA:</strong> 5.00 / 5.00</p>
+			<p class="timeline-desc">
+              Completed SSC in the Science group with a focus on core
+              mathematics and science subjects.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <div class="seam-divider" aria-hidden="true"></div>
+
+    <!-- =================================================================
+         SKILLS SECTION (Animated bars)
+    ================================================================= -->
+    <section id="skills" class="section container">
+      <div class="section-heading" data-animate="fade-up">
+        <p class="section-eyebrow">03 &mdash; Toolkit</p>
+        <h2 class="section-title">Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Technical / Engineering skills -->
+        
+		
+
+        <!-- Software / general skills -->
+        <div class="skills-column" data-animate="fade-up">
+          <h3 class="skills-subtitle">Technical Skills</h3>
+
+          <div class="skill-bar" data-level="70">
+            <div class="skill-bar-head">
+              <span>Textile Engineering Fundamentals</span>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+		  <div class="skill-bar" data-level="65">
+            <div class="skill-bar-head">
+              <span>Data Analysis</span>
+              <span class="skill-percent">65%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+
+          <div class="skill-bar" data-level="40">
+            <div class="skill-bar-head">
+              <span>C Programming (Basic)</span>
+              <span class="skill-percent">40%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+
+          <div class="skill-bar" data-level="65">
+            <div class="skill-bar-head">
+              <span>Basic HTML </span>
+              <span class="skill-percent">65%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+
+          <div class="skill-bar" data-level="70">
+            <div class="skill-bar-head">
+              <span>Microsoft Excel</span>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft skills as simple tags -->
+      <div class="tag-cloud" data-animate="fade-up">
+        <span class="tag">Teamwork</span>
+        <span class="tag">Problem Solving</span>
+		<span class="tag">Communication</span>
+        <span class="tag">Time Management</span>
+        <span class="tag">Research Mindset</span>
+		<span class="tag">Research & Literature Review</span>
+        <span class="tag">Attention to Detail</span>
+        <span class="tag">Adaptability</span>
+      </div>
+    </section>
+
+    <div class="seam-divider" aria-hidden="true"></div>
+
+    <!-- =================================================================
+         CERTIFICATIONS SECTION (Cards)
+    ================================================================= -->
+    <section id="certifications" class="section container">
+      <div class="section-heading" data-animate="fade-up">
+        <p class="section-eyebrow">04 &mdash; Credentials</p>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+
+      <!-- Add or remove .cert-card blocks as needed -->
+      <div class="card-grid">
+       <div class="cert-card" data-animate="fade-up">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.5 5.5L20 9l-4.5 4 1 6L12 16l-4.5 3 1-6L4 9l5.5-1.5z"/></svg>
+          </div>
+          <h3 class="cert-title">Computer Office Applications</h3>
+          <p class="cert-org">Bangladesh Technical Education Board(BTEB), Dhaka</p>
+          <p class="cert-date">Issued &middot; 2024</p>
+        </div>
+
+	   <div class="cert-card" data-animate="fade-up">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.5 5.5L20 9l-4.5 4 1 6L12 16l-4.5 3 1-6L4 9l5.5-1.5z"/></svg>
+          </div>
+          <h3 class="cert-title">Leadership & Management</h3>
+          <p class="cert-org">Muktopaath (Govt. of Bangladesh E-Learning Platform)</p>
+          <p class="cert-date">Issued &middot; 2024</p>
+        </div>
+		
+		<div class="cert-card" data-animate="fade-up">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.5 5.5L20 9l-4.5 4 1 6L12 16l-4.5 3 1-6L4 9l5.5-1.5z"/></svg>
+          </div>
+          <h3 class="cert-title">Front Office Management</h3>
+          <p class="cert-org">Muktopaath (Govt. of Bangladesh E-Learning Platform)</p>
+          <p class="cert-date">Issued &middot; 2024</p>
+        </div>
+
+        <div class="cert-card" data-animate="fade-up">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.5 5.5L20 9l-4.5 4 1 6L12 16l-4.5 3 1-6L4 9l5.5-1.5z"/></svg>
+          </div>
+          <h3 class="cert-title">Data Analysis</h3>
+          <p class="cert-org">Bohubrihi</p>
+          <p class="cert-date">Issued &middot; 2024</p>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <div class="seam-divider" aria-hidden="true"></div>
+
+    <!-- =================================================================
+         PROJECTS SECTION (Cards)
+    ================================================================= -->
+    <section id="projects" class="section container">
+      <div class="section-heading" data-animate="fade-up">
+        <p class="section-eyebrow">05 &mdash; Selected Work</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <!-- Add or remove .project-card blocks as needed -->
+      <div class="card-grid">
+        <article class="project-card" data-animate="fade-up">
+          <div class="project-thumb">
+            <!-- Replace with an actual project image if you have one -->
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v4H4zM4 10h10v10H4zM16 10h4v4h-4zM16 16h4v4h-4z"/></svg>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Viscosity Measurement</h3>
+            <p class="project-desc">
+              Measured the viscosity of different liquids and 
+			  analyzed their flow behavior using standard laboratory methods.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Fluid Mechanics</span>
+              <span class="tag">Lab Work</span>
+            </div>
+           
+          </div>
+        </article>
+
+        <article class="project-card" data-animate="fade-up">
+          <div class="project-thumb">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Wind Turbine Electricity Generation</h3>
+            <p class="project-desc">
+              Short description of the project &mdash; tools used, methodology,
+              and the key result or learning from it.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Renewable Energy</span>
+              <span class="tag">Sustainability</span>
+            </div>
+           
+          </div>
+        </article>
+
+        <article class="project-card" data-animate="fade-up">
+          <div class="project-thumb">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Textile Fiber Identification</h3>
+            <p class="project-desc">
+              Identified and classified natural and synthetic textile fibers through 
+			  laboratory testing and microscopic observation techniques.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Fiber Science</span>
+              <span class="tag">Textile Testing</span>
+            </div>
+            
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="seam-divider" aria-hidden="true"></div>
+
+    <!-- =================================================================
+         RESEARCH INTERESTS SECTION
+    ================================================================= -->
+    <section id="research" class="section container">
+      <div class="section-heading" data-animate="fade-up">
+        <p class="section-eyebrow">06 &mdash; Looking Ahead</p>
+        <h2 class="section-title">Research Interests</h2>
+      </div>
+
+      <div class="research-grid">
+        <div class="research-card" data-animate="fade-up">
+          <h3>Sustainable &amp; Eco-Friendly Textiles</h3>
+          <p>Exploring low-impact dyeing methods, recycled fibers, and reduced water consumption in wet processing.</p>
+        </div>
+        <div class="research-card" data-animate="fade-up">
+          <h3>Smart &amp; Functional Fabrics</h3>
+          <p>Interest in fabrics with embedded sensing, thermal regulation, or other performance-enhancing properties.</p>
+        </div>
+        <div class="research-card" data-animate="fade-up">
+          <h3>Process Optimization</h3>
+          <p>Using data analysis to improve efficiency and reduce waste across spinning, weaving, and finishing stages.</p>
+        </div>
+        <div class="research-card" data-animate="fade-up">
+          <h3>Fiber Science</h3>
+          <p>Studying natural and synthetic fiber properties to better match materials to end-use performance needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="seam-divider" aria-hidden="true"></div>
+
+    <!-- =================================================================
+         RESUME / CV DOWNLOAD SECTION
+    ================================================================= -->
+    <section id="resume" class="section container resume-section">
+      <div class="resume-box" data-animate="fade-up">
+        <div class="resume-text">
+          <p class="section-eyebrow">07 &mdash; Resume</p>
+          <h2 class="section-title">Download My CV</h2>
+          <p>
+            Want the full picture &mdash; coursework, lab experience, and references?
+            Grab a copy of my complete CV below.
+          </p>
+        </div>
+        <!-- Replace assets/Nafis_Hasan_CV.pdf with your actual CV file path -->
+        <a href="D:\mdnaf\New folder\files\nafis cv updated.pdf" class="btn btn-primary btn-large" download>
+          Download CV (PDF)
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <div class="seam-divider" aria-hidden="true"></div>
+
+    <!-- =================================================================
+         CONTACT SECTION
+    ================================================================= -->
+    <section id="contact" class="section container">
+      <div class="section-heading" data-animate="fade-up">
+        <p class="section-eyebrow">08 &mdash; Get in Touch</p>
+        <h2 class="section-title">Contact</h2>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact details -->
+        <div class="contact-info" data-animate="fade-up">
+          <p>
+            I'm always glad to connect over textile engineering, research opportunities,
+            or potential collaborations. Reach out through any of the channels below.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              <!-- EDIT: replace with your real email -->
+              <a href="mailto:mdnafis.hasan.33@gmail.com">Email</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.97.36 1.93.68 2.85a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.92.32 1.88.55 2.85.68A2 2 0 0 1 22 16.92z"/></svg>
+              <!-- EDIT: replace with your real phone number -->
+              <a href="tel:+8801791897225">Phone number</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.13 1.45-2.13 2.94v5.66H9.37V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+              <!-- EDIT: replace with your real LinkedIn URL -->
+              <a href="https://www.linkedin.com/in/md-nafis-hasan" target="_blank" rel="noopener">linkedin</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Dhaka, Bangladesh</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Simple contact form (front-end only; see script.js note) -->
+        <form class="contact-form" data-animate="fade-up" id="contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note" id="form-note" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =================================================================
+       FOOTER
+  ================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="logo">MNH<span class="logo-dot">.</span></a>
+      <p class="footer-text">
+        &copy; <span id="footer-year"></span> Md Nafis Hasan. Built with HTML, CSS &amp; JavaScript.
+      </p>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/md-nafis-hasan" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.13 1.45-2.13 2.94v5.66H9.37V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="mailto:mdnafis1219@gmail.com" aria-label="Send an email">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back-to-top button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
